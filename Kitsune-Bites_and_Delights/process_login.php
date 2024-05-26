@@ -1,7 +1,6 @@
 <?php
 include_once "db.php";
-session_start();
-
+session_start(); //to start session
 
 if(isset($_POST['f_username'])){
     $uname = $_POST['f_username'];
@@ -20,6 +19,7 @@ if(isset($_POST['f_username'])){
         $row = mysqli_fetch_assoc($sql_result);
         
         //create session variables
+     
         $_SESSION['user_info_id'] = $row['user_info_id'];
         $_SESSION['user_info_username'] = $row['username'];
         $_SESSION['user_info_password'] = $row['password'];
@@ -31,11 +31,11 @@ if(isset($_POST['f_username'])){
        
         if($row['user_type'] == 'A'){
             //admin
-            header("location: admin");
+            header("location: admin/index.php");
         }
         else if($row['user_type'] == 'C'){
             //common user
-            header("location: common_user");
+            header("location: common_user/?page=home");
         }
         else{
             header("location: index.php?error=user_not_found");
@@ -43,7 +43,6 @@ if(isset($_POST['f_username'])){
     }
     else{
         //username and password does not exist
-    
        header("location: registration.php?error=user_not_exist");
     }
 }
