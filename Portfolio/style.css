@@ -2,10 +2,10 @@
 :root
 {
     --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#2e494d;
-    --text-black-700:#504e70;
+    --bg-black-100:#9994d7;
+    --bg-black-50:#4680ba;
+    --text-black-900:#000000;
+    --text-black-700:#000000;
 }
 .aside .Logo {
     width: 80%; /* Adjust the width as needed */
@@ -27,7 +27,7 @@
 }
 
 .social-icon:hover i {
-    color: #dde4eb; /* Adjust icon color on hover */
+    color: #8d76e1; /* Adjust icon color on hover */
 }
 .aside {
     position: relative;
@@ -59,7 +59,7 @@
 }
 
 .aside .nav li:hover a {
-    color: #dde4eb; /* Adjust text color on hover */
+    color: #8d76e1; /* Adjust text color on hover */
 }
 .home {
     min-height: 100vh; /* Full height of the viewport */
@@ -105,10 +105,11 @@ ul
     min-height: 100vh;
     display: block;
     opacity: 1;
-    background: linear-gradient(135deg, #c09dbc, #f0a1ec); /* Gradient background */
     min-height: 100vh;
     display: block;
     opacity: 1;
+    background: url('image/bg2.jpg') center/cover no-repeat;
+    
 }
 .hidden
 {
@@ -172,7 +173,6 @@ ul
 {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 }
 .btn
 {
@@ -203,12 +203,12 @@ ul
 .social-icon {
     margin-right: 10px;
          font-size: 50px;
-    color: #000; /* Change this color to match your theme */
+    color: #000;
     text-decoration: none;
 }
 
 .social-icon:hover {
-    color: #141617; /* Change this color to match your theme */
+    color: #141617;
 }
 .contact-info-item {
     padding: 15px;
@@ -216,11 +216,10 @@ ul
 }
 
 .contact-info-item:hover {
-    background-color: #f0f0f0; /* Change to whatever color you prefer */
+    background-color: #f0f0f0; 
 }
-/* Add pulsating hover effect */
 .portfolio-item:hover .portfolio-item-inner {
-    animation: pulse 1s infinite alternate; /* Adjust animation duration as needed */
+    animation: pulse 1s infinite alternate; 
 }
 
 @keyframes pulse {
@@ -228,11 +227,10 @@ ul
         transform: scale(1);
     }
     to {
-        transform: scale(1.05); /* Adjust the scaling factor for pulsating effect */
+        transform: scale(1.05); 
     }
 }
 
-/* Rest of your existing CSS for portfolio items */
 .portfolio-item {
     padding: 15px;
 }
@@ -261,8 +259,7 @@ ul
     justify-content: center;
     align-items: center;
     z-index: 10;
-    background-color: rgb(209, 144, 195);
-    background-image: url('image/Boarder.jpg');
+    background-color: rgb(221, 213, 220);
     background-size: cover; /* Cover the entire container */
     display: flex;
 }
@@ -394,13 +391,13 @@ ul
     max-width: 60%;
 }
 h3.hello {
-    font-size: 30px;
+    font-size: 50px;
     margin: 15px 0;
     color: black;
 }
 
 h3.hello span /* name */ {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 1000;
     color: black;
 }
@@ -761,14 +758,14 @@ h3.my-profession /*Course*/
     color: var(--skin--color);
     text-align: center;
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 30px;
 }
 .contact-sub-title
 {
     color: var(--text-black-900);
     text-align: center;
     Margin-bottom: 60px;
-    font-size: 15px;
+    font-size: 30px;
 }
 .contact .contact-info-item
 {
@@ -783,12 +780,12 @@ h3.my-profession /*Course*/
 }
 .contact .contact-info-item .icon .fa
 {
-    font-size: 25px;
+    font-size: 50px;
     color: var(--skin-color);
 }
 .contact .contact-info-item h4
 {
-    font-size: 18px;
+    font-size: 25px;
     color: var(--text-black-900);
     font-weight: 700px;
     text-transform:capitalize;
@@ -911,7 +908,69 @@ h3.my-profession /*Course*/
         flex: 0 0 100%;
         max-width: 100%;
     }
-}
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    .form-item {
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        background-color: pink;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 480px) 
+    {
+        .contact-form {
+            padding: 10px;
+        }
+    }
+    contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .btn {
+        background-color: #809ab5;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
 :root {
     --yellow:#f9ca24;
 }
@@ -919,4 +978,5 @@ h3.my-profession /*Course*/
 *::selection {
     background: var(--yellow);
     color: #333;
+}
 }
