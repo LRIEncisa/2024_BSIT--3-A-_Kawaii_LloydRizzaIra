@@ -7,15 +7,59 @@
     --text-black-900:#2e494d;
     --text-black-700:#504e70;
 }
-.logo img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
-    margin-bottom: 2000px; /* Adjust the margin as needed */
+.aside .Logo {
+    width: 80%; /* Adjust the width as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 1px; /* Space between image and nav toggler */
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+
+.social-icon i {
+    font-size: 50px; /* Adjust icon size */
+    color: #333; /* Adjust icon color */
+}
+
+.social-icon:hover i {
+    color: #dde4eb; /* Adjust icon color on hover */
+}
+.aside {
+    position: relative;
+}
+
 .logo {
-    text-align: center; /* Align the logo in the center */
-    margin-top: 10px;
-    width: 500px;  
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav {
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.aside .nav li:hover a {
+    color: #dde4eb; /* Adjust text color on hover */
 }
 .home {
     min-height: 100vh; /* Full height of the viewport */
@@ -151,11 +195,62 @@ ul
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
+/*acc. icon*/
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icon {
+    margin-right: 10px;
+         font-size: 50px;
+    color: #000; /* Change this color to match your theme */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #141617; /* Change this color to match your theme */
+}
+.contact-info-item {
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-info-item:hover {
+    background-color: #f0f0f0; /* Change to whatever color you prefer */
+}
+/* Add pulsating hover effect */
+.portfolio-item:hover .portfolio-item-inner {
+    animation: pulse 1s infinite alternate; /* Adjust animation duration as needed */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05); /* Adjust the scaling factor for pulsating effect */
+    }
+}
+
+/* Rest of your existing CSS for portfolio items */
+.portfolio-item {
+    padding: 15px;
+}
+
+.portfolio-item-inner {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
 /* aside */
 .aside
 {
-    width: 270px;
-    background: var(--bg-black-100);
+    width:270px;
     position: fixed;
     left: 0px;
     top: 0;
@@ -166,6 +261,10 @@ ul
     justify-content: center;
     align-items: center;
     z-index: 10;
+    background-color: rgb(209, 144, 195);
+    background-image: url('image/Boarder.jpg');
+    background-size: cover; /* Cover the entire container */
+    display: flex;
 }
 .aside .logo
 {
@@ -213,7 +312,7 @@ ul
 .aside .nav-toggler
 {
     height: 40px;
-    width: 45px;
+    width: 40px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
@@ -228,7 +327,7 @@ ul
 .aside .nav-toggler span
 {
     height: 2px;
-    width: 18px;
+    width: 20px;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
@@ -255,7 +354,7 @@ ul
 }
 .aside .nav
 {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .aside .nav li
 {
@@ -281,7 +380,7 @@ ul
 }
 .home /* -----Home-------- */
 {
-    background: linear-gradient(to right, #a563ad, var(--bg-black-900)); 
+    background: url('image/bg.jpg') center/cover no-repeat;
     min-height: 100vh;
     display: block;
     opacity: 1;
@@ -294,18 +393,16 @@ ul
     flex: 0 0 60%;
     max-width: 60%;
 }
-h3.hello /*-----hi there----------*/
-{
+h3.hello {
     font-size: 30px;
     margin: 15px 0;
     color: black;
 }
+
 h3.hello span /* name */ {
     font-size: 40px;
     font-weight: 1000;
-    color: var(--skin-color);
-    animation: wavyName 2s infinite linear; /* Adjust the duration and animation type as needed */
-    display: inline-block; /* Ensures that the animation affects the whole name */
+    color: black;
 }
 
 @keyframes wavyName {
@@ -815,13 +912,6 @@ h3.my-profession /*Course*/
         max-width: 100%;
     }
 }
-
-
-
-
-
-
-
 :root {
     --yellow:#f9ca24;
 }
@@ -830,4 +920,3 @@ h3.my-profession /*Course*/
     background: var(--yellow);
     color: #333;
 }
-
