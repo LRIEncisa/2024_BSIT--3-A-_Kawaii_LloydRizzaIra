@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.form-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px; /* Reduced padding for compactness */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    margin-top: 15px; /* Reduced margin */
+}
+
+h3.display-4 {
+    color: #5c5c8a;
+    font-weight: bold;
+    margin-bottom: 10px; /* Reduced space below the title */
+    font-size: 1.5rem; /* Smaller font size */
+}
+
+.container {
+    max-width: 400px; /* Smaller width for compactness */
+    margin-left:12%;
+}
+
+.btn-custom, .btn-link-custom {
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom {
+    background-color: #ff85a2;
+    color: white;
+    padding: 8px 16px; /* Slightly smaller padding */
+}
+
+.btn-custom:hover {
+    background-color: #ff6384;
+    transform: scale(1.08);
+}
+
+.btn-link-custom {
+    background-color: transparent;
+    color: #ff85a2;
+}
+
+.btn-link-custom:hover {
+    color: #ff6384;
+    text-decoration: underline;
+}
+
+.form-control {
+    border-radius: 15px;
+}
+
+.form-control:focus {
+    background-color: #fff0f6;
+    border-color: #ff85a2;
+    box-shadow: 0 3px 12px rgba(255,133,162,0.25);
+}
+
+.form-group{
+    height: 65px;
+}

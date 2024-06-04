@@ -3,75 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Registration Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/registration.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+        
+        #bgimg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        background-image: url('img/kbdbg.jpg');
+        background-size: cover;
+        background-attachment: scroll;
+        z-index: -1;
+    }
 
-        .form-container {
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 20px; /* Reduced padding for compactness */
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-            margin-top: 40px; /* Reduced margin */
-            margin-bottom: 40px;
-        }
-
-        h3.display-4 {
-            color: #5c5c8a;
-            font-weight: bold;
-            margin-bottom: 20px; /* Reduced space below the title */
-            font-size: 1.5rem; /* Smaller font size */
-        }
-
-        .container {
-            max-width: 400px; /* Smaller width for compactness */
-            margin: auto;
-        }
-
-        .btn-custom, .btn-link-custom {
-            border-radius: 25px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-custom {
-            background-color: #ff85a2;
-            color: white;
-            padding: 8px 16px; /* Slightly smaller padding */
-        }
-
-        .btn-custom:hover {
-            background-color: #ff6384;
-            transform: scale(1.08);
-        }
-
-        .btn-link-custom {
-            background-color: transparent;
-            color: #ff85a2;
-        }
-
-        .btn-link-custom:hover {
-            color: #ff6384;
-            text-decoration: underline;
-        }
-
-        .form-control {
-            border-radius: 15px;
-        }
-
-        .form-control:focus {
-            background-color: #fff0f6;
-            border-color: #ff85a2;
-            box-shadow: 0 3px 12px rgba(255,133,162,0.25);
-        }
+        
     </style>
 </head>
-<body>
+<body> 
+    <div id="bgimg">
     <div class="container">
         <div class="form-container">
             <h3 class="display-4 text-center">Registration Form</h3>
@@ -119,6 +73,7 @@
                 </div>
             </form>
         </div>
+    </div>
     </div>
 </body>
 </html>
